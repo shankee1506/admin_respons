@@ -1,4 +1,4 @@
-import React, { lazy } from 'react'
+
 import {
   CBadge,
   CButton,
@@ -10,97 +10,85 @@ import {
   CCol,
   CProgress,
   CRow,
-  CCallout,
-  CWidgetProgress,
-  CWidgetProgressIcon,
-  CCardGroup,
+
+  
+  CListGroup,
+  CListGroupItem,
+ 
 } from '@coreui/react'
+
 import CIcon from '@coreui/icons-react'
 
 import MainChartExample from '../charts/MainChartExample.js'
 
-const WidgetsDropdown = lazy(() => import('../widgets/WidgetsDropdown.js'))
-const WidgetsBrand = lazy(() => import('../widgets/WidgetsBrand.js'))
+
 
 const Dashboard = () => {
   return (
     <div>
-    <CCardBody>
-    <CCardGroup className="mb-4">
-    <CWidgetProgressIcon
-          header="87.500"
-          text="Visitors"
-          color="gradient-info"
-        >
-          <CIcon name="cil-people" height="36"/>
-        </CWidgetProgressIcon>
 
-        <CWidgetProgressIcon
-          header="87.500"
-          text="Visitors"
-          color="gradient-info"
-        >
-          <CIcon name="cil-people" height="36"/>
-        </CWidgetProgressIcon>
-        
-
-        <CWidgetProgressIcon
-          header="87.500"
-          text="Visitors"
-          color="gradient-info"
-        >
-          <CIcon name="cil-people" height="36"/>
-        </CWidgetProgressIcon>
-
-        <CWidgetProgressIcon
-          header="87.500"
-          text="Visitors"
-          color="gradient-info"
-        >
-          <CIcon name="cil-people" height="36"/>
-        </CWidgetProgressIcon>
-        </CCardGroup>
+    <CRow>
+    <CCol sm="12" xl="6">
+      <CCard>
+        <CCardHeader>
+          SALES DETAILS
+          <small> </small>
+        </CCardHeader>
+        <CCardBody>
+          <CListGroup>
+            <CListGroupItem className="justify-content-between">
+              CASH
+              <CBadge className="float-right" shape="pill" color="primary">21,234.00</CBadge>
+            </CListGroupItem>
+            <CListGroupItem className="justify-content-between">
+              CREDIT
+              <CBadge className="float-right" shape="pill" color="primary">1,000,000.00</CBadge>
+            </CListGroupItem>
+            <CListGroupItem className="justify-content-between">
+              CHECK
+              <CBadge className="float-right" shape="pill" color="primary">1,000,000.00</CBadge>
+            </CListGroupItem>
+            <CListGroupItem className="justify-content-between">
+              TOTAL
+              <CBadge className="float-right" shape="pill" color="primary">23,000,000.00</CBadge>
+            </CListGroupItem>
+          </CListGroup>
         </CCardBody>
+      </CCard>
 
+    </CCol>
+
+    <CCol sm="12" xl="6">
     <CCard>
-    <CCardBody>
-    <CCol sm="5">
-    <h4 id="traffic" className="card-title mb-0">SALES SKILL ASSESSMENT</h4> 
+      <CCardHeader>
+        EXPENSE DETAILS
+        <small> </small>
+      </CCardHeader>
+      <CCardBody>
+        <CListGroup>
+          <CListGroupItem className="justify-content-between">
+            CASH
+            <CBadge className="float-right" shape="pill" color="primary">21,234.00</CBadge>
+          </CListGroupItem>
+          <CListGroupItem className="justify-content-between">
+            CREDIT
+            <CBadge className="float-right" shape="pill" color="primary">1,000,000.00</CBadge>
+          </CListGroupItem>
+          <CListGroupItem className="justify-content-between">
+            CHECK
+            <CBadge className="float-right" shape="pill" color="primary">1,000,000.00</CBadge>
+          </CListGroupItem>
+          <CListGroupItem className="justify-content-between">
+            TOTAL
+            <CBadge className="float-right" shape="pill" color="primary">23,000,000.00</CBadge>
+          </CListGroupItem>
+        </CListGroup>
+      </CCardBody>
+    </CCard>
+
   </CCol>
 
-    <CCol xs="12" sm="8" lg="3">
-    <CWidgetProgress>
-  
-    <CCol col="12" sm="6">
-      <CCallout color="info">
-        <small class="text-muted">New Clients</small><br/>
-        <strong class="h4">9,123</strong>
-      </CCallout>
-    </CCol>
-    <CCol col="12" sm="6">
-      <CCallout color="info">
-        <small class="text-muted">Recurring Clients</small><br/>
-        <strong class="h4">22,643</strong>
-      </CCallout>
-    </CCol>
-    <CCol col="12" sm="6">
-      <CCallout color="info">
-        <small class="text-muted">New Clients</small><br/>
-        <strong class="h4">9,123</strong>
-      </CCallout>
-    </CCol>
-    <CCol col="12" sm="6">
-      <CCallout color="info">
-        <small class="text-muted">New Clients</small><br/>
-        <strong class="h4">9,123</strong>
-      </CCallout>
-    </CCol>
-  
-  </CWidgetProgress>
-  </CCol>
-  </CCardBody>
-  </CCard>
-
+  </CRow>
 
       <CCard>
         <CCardBody>

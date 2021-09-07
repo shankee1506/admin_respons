@@ -5,10 +5,10 @@ import {
   CCardBody,
   CCardHeader,
   CCol,
-  CDataTable,
-  CRow
+  CDataTable
+  
 } from '@coreui/react'
-import { DocsLink } from 'src/reusable'
+
 
 import usersData from '../../users/UsersData'
 
