@@ -5,7 +5,8 @@ import {
   CCardBody,
   CCardHeader,
   CCol,
-  CDataTable
+  CDataTable,
+  CRow
   
 } from '@coreui/react'
 
@@ -25,17 +26,21 @@ const fields = ['DATE','NAME', 'ITEMS', 'TYPE','TOTAL']
 
 const Receipts = () => {
     return (
-        <CCol xs="12" lg="10">
+      <CRow>
+      <CCol>
         <CCard>
           <CCardHeader>
-            Bordered Table
+            Combined All Table
           </CCardHeader>
           <CCardBody>
           <CDataTable
             items={usersData}
             fields={fields}
+            hover
+            striped
             bordered
-            itemsPerPage={5}
+            size="sm"
+            itemsPerPage={10}
             pagination
             scopedSlots = {{
               'status':
@@ -46,12 +51,14 @@ const Receipts = () => {
                     </CBadge>
                   </td>
                 )
-
             }}
           />
           </CCardBody>
         </CCard>
       </CCol>
+    </CRow>
+
+     
     )
 }
 

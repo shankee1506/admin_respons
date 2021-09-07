@@ -18,7 +18,7 @@ const Details = () => {
     <CCol sm="12" xl="6">
       <CCard>
         <CCardHeader>
-         TODAY SALES DETAILS
+        <h2> TODAY SALES DETAILS</h2>
           <small> </small>
         </CCardHeader>
         <CCardBody>
@@ -48,7 +48,7 @@ const Details = () => {
     <CCol sm="12" xl="6">
     <CCard>
       <CCardHeader>
-        CURRENT MONTHSALES DETAILS
+      <h2>CURRENT MONTHSALES DETAILS</h2>
         <small> </small>
       </CCardHeader>
       <CCardBody>
@@ -82,7 +82,7 @@ const Details = () => {
   <CCol sm="12" xl="6">
     <CCard>
       <CCardHeader>
-        OUTSTANDING STATUS
+      <h2>OUTSTANDING STATUS</h2>
         <small> </small>
       </CCardHeader>
       <CCardBody>
@@ -112,7 +112,7 @@ const Details = () => {
   <CCol sm="12" xl="6">
   <CCard>
     <CCardHeader>
-      LAST MONTH DETAILS
+    <h2>LAST MONTH DETAILS</h2>
       <small> </small>
     </CCardHeader>
     <CCardBody>

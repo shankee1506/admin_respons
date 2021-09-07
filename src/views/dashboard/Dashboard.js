@@ -31,7 +31,9 @@ const Dashboard = () => {
     <CCol sm="12" xl="6">
       <CCard>
         <CCardHeader>
+        <h2>
           SALES DETAILS
+          </h2>
           <small> </small>
         </CCardHeader>
         <CCardBody>
@@ -61,7 +63,7 @@ const Dashboard = () => {
     <CCol sm="12" xl="6">
     <CCard>
       <CCardHeader>
-        EXPENSE DETAILS
+      <h2>EXPENSE DETAILS</h2>
         <small> </small>
       </CCardHeader>
       <CCardBody>
